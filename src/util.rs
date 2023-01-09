@@ -224,6 +224,7 @@ macro_rules! get_sp {
         let sp: usize;
         #[allow(unused_unsafe)]
         unsafe {
+            use core::arch::asm;
 
             #[cfg(target_arch="x86_64")]
             {

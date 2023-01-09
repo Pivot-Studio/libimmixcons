@@ -1,5 +1,3 @@
-use crate::util::zeroed;
-
 #[derive(Clone, Copy, PartialEq, Eq)]
 pub struct StackBounds {
     pub origin: *mut u8,

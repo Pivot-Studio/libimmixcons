@@ -2,14 +2,12 @@
 #![allow(improper_ctypes_definitions)]
 #![feature(
     allocator_api,
-    asm,
     nonnull_slice_from_raw_parts,
     alloc_layout_extra,
-    raw,
     linked_list_cursors,
     thread_local
 )]
-#![cfg_attr(test, feature(const_in_array_repeat_expressions))]
+// #![cfg_attr(test, feature(const_in_array_repeat_expressions))]
 #![cfg_attr(not(test), no_std)]
 
 #[cfg(feature = "log")]
