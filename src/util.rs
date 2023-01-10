@@ -1,5 +1,3 @@
-#[macro_use]
-pub(crate) mod bitmap_const;
 use core::sync::atomic::{AtomicPtr, Ordering};
 use core::{
     alloc::Allocator,

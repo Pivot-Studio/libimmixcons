@@ -254,6 +254,7 @@ impl LargeObjectSpace {
             if (cell as usize) < self.allocations[self.allocations.len() - 1] as usize
                 || (cell as usize) < self.allocations[0] as usize
             {
+                // 保证指针顺序排列
                 self.allocations.sort_unstable();
             }
             let raw = (&*cell).cell();
